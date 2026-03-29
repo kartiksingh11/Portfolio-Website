@@ -31,6 +31,21 @@ export default function Contact() {
         createdAt: serverTimestamp()
       });
 
+      // Send Email Notification
+      try {
+        await fetch('/api/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+      } catch (emailError) {
+        // We don't fail the whole process if email fails, 
+        // as the message is already saved in Firestore.
+        console.error('Email notification failed:', emailError);
+      }
+
       setStatus('success');
       setFormData({ fullName: '', email: '', subject: '', message: '' });
       

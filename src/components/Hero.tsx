@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Download, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { useEffect, useState } from 'react';
-
+import profileImg from '../profile.png';
 
 const roles = ["AI Product Engineer", "Product Engineer", "GenAI Specialist", "ML Developer"];
 
@@ -95,7 +95,7 @@ export default function Hero() {
             {/* Image Container */}
             <div className="absolute inset-8 rounded-full overflow-hidden border-4 border-secondary-bg glow-accent">
               <img
-                src='../profile.png'
+                src={profileImg}
                 alt="Kartik Singh"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
