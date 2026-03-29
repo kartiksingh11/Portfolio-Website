@@ -95,7 +95,7 @@ export default function Hero() {
             {/* Image Container */}
             <div className="absolute inset-8 rounded-full overflow-hidden border-4 border-secondary-bg glow-accent">
               <img
-                src='../public/profile.png'
+                src="/profile.png"
                 alt="Kartik Singh"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
