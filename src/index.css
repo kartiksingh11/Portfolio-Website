@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-primary-bg: #0B1120;
+  --color-secondary-bg: #1E293B;
+  --color-accent: #FF6B4A;
+  --color-accent-hover: #fa5a36;
+  --color-secondary-accent: #38BDF8;
+  --color-text-heading: #FFFFFF;
+  --color-text-body: #CBD5E1;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-primary-bg text-text-body font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-text-heading font-semibold;
+  }
+}
+
+.glass-card {
+  @apply bg-secondary-bg/50 backdrop-blur-md border border-white/10 shadow-xl;
+}
+
+.glow-accent {
+  box-shadow: 0 0 20px rgba(255, 107, 74, 0.2);
+}
+
+.glow-accent:hover {
+  box-shadow: 0 0 30px rgba(255, 107, 74, 0.4);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: var(--color-accent) }
+}
