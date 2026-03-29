@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ExternalLink, Github, Terminal } from 'lucide-react';
+import { Github, Terminal } from 'lucide-react';
 
 const projects = [
   {
@@ -7,24 +7,21 @@ const projects = [
     description: "Autonomous AI auditor to map bank policies against GDPR regulations. Implemented a Multi-Agent 'Critic' loop to eliminate hallucinations and optimized high-volume ingestion using recursive character splitting.",
     image: "https://picsum.photos/seed/compliance/800/500",
     tags: ["LangChain", "LlamaIndex", "ChromaDB", "Llama 3", "OpenAI"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/kartiksingh11/Multi-Agent-Compliance-Auditor"
   },
   {
     title: "Predictive Maintenance for Industry 4.0",
     description: "Dual-task ML system to predict machine failures and classify modes. Mitigated 97% class imbalance using SMOTE-NC and integrated transparency tools using Permutation Feature Importance.",
     image: "https://picsum.photos/seed/maintenance/800/500",
     tags: ["Python", "Scikit-learn", "XGBoost", "SMOTE-NC", "Graphviz"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/kartiksingh11/Predictive-Maintenance-System-ML"
   },
   {
     title: "Brain-Tumor-Detector",
     description: "Detection model using Convolutional Neural Networks. Achieved 99% accuracy on test data and selected as the top project in the cohort.",
     image: "https://picsum.photos/seed/brain/800/500",
     tags: ["CNN", "PyTorch", "Computer Vision", "Deep Learning"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/kartiksingh11/Minor-Project"
   }
 ];
 
@@ -71,11 +68,8 @@ export default function Projects() {
                 </p>
                 <div className="flex items-center justify-between pt-6 border-t border-white/5">
                   <div className="flex gap-4">
-                    <a href={project.github} className="text-sm font-bold text-white flex items-center gap-2 hover:text-accent transition-colors">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-white flex items-center gap-2 hover:text-accent transition-colors">
                       <Github className="w-4 h-4" /> Code
-                    </a>
-                    <a href={project.demo} className="text-sm font-bold text-accent flex items-center gap-2 hover:underline">
-                      Live Demo <ExternalLink className="w-4 h-4" />
                     </a>
                   </div>
                 </div>
@@ -85,9 +79,14 @@ export default function Projects() {
         </div>
 
         <div className="mt-16 text-center">
-          <button className="px-8 py-4 bg-secondary-bg text-white rounded-xl font-bold border border-white/10 hover:bg-white/5 transition-all">
+          <a 
+            href="https://github.com/kartiksingh11" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-4 bg-secondary-bg text-white rounded-xl font-bold border border-white/10 hover:bg-white/5 transition-all"
+          >
             View All Projects
-          </button>
+          </a>
         </div>
       </div>
     </section>

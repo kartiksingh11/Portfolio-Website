@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Download, Github, Linkedin, Twitter } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const roles = ["AI Product Engineer", "Product Engineer", "GenAI Specialist", "ML Developer"];
@@ -62,16 +62,21 @@ export default function Hero() {
               View Projects
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <button className="px-8 py-4 bg-secondary-bg text-white rounded-xl font-bold border border-white/10 hover:bg-white/5 transition-all flex items-center gap-2">
+            <a 
+              href="https://drive.google.com/file/d/1b-SO91qXui0C0WVBKC45Q_9-SjNywW3u/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-secondary-bg text-white rounded-xl font-bold border border-white/10 hover:bg-white/5 transition-all flex items-center gap-2"
+            >
               <Download className="w-5 h-5" />
               Resume
-            </button>
+            </a>
           </div>
 
           <div className="flex items-center gap-6">
-            <a href="#" className="text-text-body hover:text-white transition-colors"><Github className="w-6 h-6" /></a>
-            <a href="#" className="text-text-body hover:text-white transition-colors"><Linkedin className="w-6 h-6" /></a>
-            <a href="#" className="text-text-body hover:text-white transition-colors"><Twitter className="w-6 h-6" /></a>
+            <a href="https://github.com/kartiksingh11" target="_blank" rel="noopener noreferrer" className="text-text-body hover:text-white transition-colors"><Github className="w-6 h-6" /></a>
+            <a href="https://linkedin.com/in/kartik-singh11/" target="_blank" rel="noopener noreferrer" className="text-text-body hover:text-white transition-colors"><Linkedin className="w-6 h-6" /></a>
+            <a href="mailto:kartiksingh11a@gmail.com" className="text-text-body hover:text-white transition-colors"><Mail className="w-5 h-5" /></a>
           </div>
         </motion.div>
 
