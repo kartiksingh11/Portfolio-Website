@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <a href="https://github.com/kartiksingh11/" target="_blank" rel="noopener noreferrer" className="text-text-body hover:text-white transition-colors"><Github className="w-5 h-5" /></a>
             <a href="https://linkedin.com/in/kartik-singh11/" target="_blank" rel="noopener noreferrer" className="text-text-body hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
-            <a href="mailto:kartiksingh11a@gmail.com" className="text-text-body hover:text-white transition-colors"><Mail className="w-5 h-5" /></a>
+            <a href="mailto:kartikchinu9@gmail.com" className="text-text-body hover:text-white transition-colors"><Mail className="w-5 h-5" /></a>
           </div>
 
           <p className="text-sm text-text-body">

@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Download, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import profile from "../assets/profile.png";
+import profile from '../assets/profile.png';
 
 
 const roles = ["AI Product Engineer", "Product Engineer", "GenAI Specialist", "ML Developer"];
@@ -78,7 +78,7 @@ export default function Hero() {
           <div className="flex items-center gap-6">
             <a href="https://github.com/kartiksingh11" target="_blank" rel="noopener noreferrer" className="text-text-body hover:text-white transition-colors"><Github className="w-6 h-6" /></a>
             <a href="https://linkedin.com/in/kartik-singh11/" target="_blank" rel="noopener noreferrer" className="text-text-body hover:text-white transition-colors"><Linkedin className="w-6 h-6" /></a>
-            <a href="mailto:kartiksingh11a@gmail.com" className="text-text-body hover:text-white transition-colors"><Mail className="w-5 h-5" /></a>
+            <a href="mailto:kartikchinu9@gmail.com" className="text-text-body hover:text-white transition-colors"><Mail className="w-5 h-5" /></a>
           </div>
         </motion.div>
 
