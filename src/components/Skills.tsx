@@ -3,24 +3,28 @@ import { Code, Database, Layout, Server, Settings, Terminal } from 'lucide-react
 
 const skillCategories = [
   {
+    title: "Languages",
+    icon: <Terminal className="w-6 h-6 text-accent" />,
+    skills: ["Java", "Python", "SQL"]
+  },
+  {
     title: "AI & Machine Learning",
-    icon: <Layout className="w-6 h-6 text-accent" />,
-    skills: ["GenAI", "Agentic AI", "RAG", "NLP", "LangChain", "Prompt Engineering", "Fine-tuning"]
+    icon: <Layout className="w-6 h-6 text-secondary-accent" />,
+    skills: [
+      "Generative AI", "Agentic AI", "RAG", "LLMOps", 
+      "Prompt Engineering", "Fine-Tuning", "Model Evaluation", 
+      "Embeddings", "Vector Search", "NLP"
+    ]
   },
   {
     title: "Frameworks & Tools",
-    icon: <Server className="w-6 h-6 text-secondary-accent" />,
-    skills: ["PyTorch", "Hugging Face", "Transformers", "FastAPI", "Scikit-learn", "XGBoost"]
+    icon: <Server className="w-6 h-6 text-yellow-500" />,
+    skills: ["LangChain", "LangGraph", "OpenAI API", "FastAPI", "ChromaDB", "SQLite"]
   },
   {
-    title: "Core Technical",
-    icon: <Database className="w-6 h-6 text-yellow-500" />,
-    skills: ["Python", "SQL", "Statistics", "Predictive Modeling", "Model Evaluation"]
-  },
-  {
-    title: "Certifications",
+    title: "Practices",
     icon: <Settings className="w-6 h-6 text-green-500" />,
-    skills: ["TCS AI Hackathon Winner", "Google GenAI Leader", "Kaggle Expert"]
+    skills: ["CI/CD", "REST API Design", "Semantic Search", "Agent Orchestration"]
   }
 ];
 
@@ -91,7 +95,7 @@ export default function Skills() {
                 <span className="text-2xl font-bold text-white/10 flex items-center gap-2"><Code className="w-6 h-6" /> GENAI</span>
                 <span className="text-2xl font-bold text-white/10 flex items-center gap-2"><Terminal className="w-6 h-6" /> PYTHON</span>
                 <span className="text-2xl font-bold text-white/10 flex items-center gap-2"><Database className="w-6 h-6" /> SQL</span>
-                <span className="text-2xl font-bold text-white/10 flex items-center gap-2"><Settings className="w-6 h-6" /> PYTORCH</span>
+                <span className="text-2xl font-bold text-white/10 flex items-center gap-2"><Settings className="w-6 h-6" /> LANGGRAPH</span>
                 <span className="text-2xl font-bold text-white/10 flex items-center gap-2"><Layout className="w-6 h-6" /> LANGCHAIN</span>
                 <span className="text-2xl font-bold text-white/10 flex items-center gap-2"><Server className="w-6 h-6" /> FASTAPI</span>
               </div>

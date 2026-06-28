@@ -3,10 +3,17 @@ import { Github, Terminal } from 'lucide-react';
 
 const projects = [
   {
+    title: "Enterprise Multi-Agent GenAI Platform",
+    description: "Designed a multi-agent orchestration system (RAG, SQL, and Web agents) using LangGraph, with intelligent query routing across heterogeneous enterprise knowledge sources. Built an end-to-end RAG pipeline processing 1,000+ document chunks through embedding generation and ChromaDB-based semantic retrieval, reducing manual repository search time. Instrumented agent tracing and observability dashboards to support explainable, debuggable decision-making across the agent pipeline.",
+    image: "https://picsum.photos/seed/platform/800/500",
+    tags: ["LangGraph", "OpenAI", "ChromaDB", "SQLite", "FastAPI"],
+    github: "https://github.com/kartiksingh11"
+  },
+  {
     title: "Multi-Agent RAG Compliance Auditor",
-    description: "Autonomous AI auditor to map bank policies against GDPR regulations. Implemented a Multi-Agent 'Critic' loop to eliminate hallucinations and optimized high-volume ingestion using recursive character splitting.",
+    description: "Built an autonomous compliance auditor mapping banking policy documents against GDPR requirements using retrieval-augmented generation. Designed a multi-agent Critic workflow for cross-verification of retrieved evidence to reduce hallucinations, cutting manual compliance review effort by 70% through automated source attribution.",
     image: "https://picsum.photos/seed/compliance/800/500",
-    tags: ["LangChain", "LlamaIndex", "ChromaDB", "Llama 3", "OpenAI"],
+    tags: ["LangChain", "LlamaIndex", "ChromaDB", "GDPR"],
     github: "https://github.com/kartiksingh11/Multi-Agent-Compliance-Auditor"
   },
   {
@@ -15,13 +22,6 @@ const projects = [
     image: "https://picsum.photos/seed/maintenance/800/500",
     tags: ["Python", "Scikit-learn", "XGBoost", "SMOTE-NC", "Graphviz"],
     github: "https://github.com/kartiksingh11/Predictive-Maintenance-System-ML"
-  },
-  {
-    title: "Brain-Tumor-Detector",
-    description: "Detection model using Convolutional Neural Networks. Achieved 99% accuracy on test data and selected as the top project in the cohort.",
-    image: "https://picsum.photos/seed/brain/800/500",
-    tags: ["CNN", "PyTorch", "Computer Vision", "Deep Learning"],
-    github: "https://github.com/kartiksingh11/Minor-Project"
   }
 ];
 

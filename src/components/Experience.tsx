@@ -4,10 +4,15 @@ import { Briefcase } from 'lucide-react';
 const experiences = [
   {
     role: "AI Product Engineer",
-    company: "Tata Consultancy Services | Saudi National Bank",
+    company: "Tata Consultancy Services (Saudi National Bank)",
     period: "June 2024 - Present",
-    description: "Automating credit underwriting engines and developing GenAI agents for financial paperwork interpretation. Leveraging NLP and Statistics to save $4M in annual operational costs.",
-    tech: ["GenAI", "NLP", "ExplainableAI", "SQL", "Statistics"]
+    bullets: [
+      "Designed and prototyped GenAI agents using NLP to automate interpretation of complex financial documents, with an estimated $4M in projected annual operational savings",
+      "Built and validated data pipelines using SQL and statistical methods, achieving 98% accuracy in automated OCR/document parsing of high-volume financial transaction records",
+      "Contributed to system architecture for an automated credit underwriting engine, translating credit policy rules into executable logic; advised on integrating Explainable AI (XAI) for decision transparency during architectural design reviews",
+      "Developed core lending and customer-onboarding features on the TCS BaNCS core banking platform (Java), supporting enterprise banking operations for a leading Saudi Arabian financial institution"
+    ],
+    tech: ["GenAI", "LangGraph", "NLP", "Explainable AI (XAI)", "SQL", "Statistics", "Java", "TCS BaNCS"]
   }
 ];
 
@@ -40,9 +45,13 @@ export default function Experience() {
                   <span className="text-accent font-mono text-sm font-bold mb-2 block">{exp.period}</span>
                   <h3 className="text-2xl font-bold text-white mb-1">{exp.role}</h3>
                   <div className="text-secondary-accent font-medium mb-4">{exp.company}</div>
-                  <p className="text-text-body text-sm leading-relaxed mb-6">
-                    {exp.description}
-                  </p>
+                  
+                  <ul className={`list-disc pl-5 space-y-2 text-text-body text-xs md:text-sm leading-relaxed mb-6 text-left`}>
+                    {exp.bullets.map((bullet, i) => (
+                      <li key={i}>{bullet}</li>
+                    ))}
+                  </ul>
+
                   <div className={`flex flex-wrap gap-2 ${idx % 2 === 0 ? 'md:justify-end' : 'md:justify-start'}`}>
                     {exp.tech.map(t => (
                       <span key={t} className="px-3 py-1 bg-primary-bg text-[10px] font-bold text-text-body rounded-full border border-white/5">
