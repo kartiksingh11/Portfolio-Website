@@ -4,15 +4,15 @@ import { Briefcase } from 'lucide-react';
 const experiences = [
   {
     role: "AI Product Engineer",
-    company: "Tata Consultancy Services (Saudi National Bank)",
-    period: "June 2024 - Present",
+    company: "Tata Consultancy Services (TCS)",
+    client: "Client: Banque Saudi Fransi | BFSI / Core Banking",
+    period: "Jun 2024 – Present",
     bullets: [
-      "Designed and prototyped GenAI agents using NLP to automate interpretation of complex financial documents, with an estimated $4M in projected annual operational savings",
-      "Built and validated data pipelines using SQL and statistical methods, achieving 98% accuracy in automated OCR/document parsing of high-volume financial transaction records",
-      "Contributed to system architecture for an automated credit underwriting engine, translating credit policy rules into executable logic; advised on integrating Explainable AI (XAI) for decision transparency during architectural design reviews",
-      "Developed core lending and customer-onboarding features on the TCS BaNCS core banking platform (Java), supporting enterprise banking operations for a leading Saudi Arabian financial institution"
+      "Built and evaluated Generative AI and NLP agents for financial document workflows processing 1,000 documents annually, reducing manual review effort by approximately 85% in prototype evaluations and supporting approximately $1M in projected operational savings.",
+      "Developed automated credit underwriting components by translating lending policies and business rules into executable decision logic, targeting approximately 60% lower loan processing turnaround time.",
+      "Delivered Java, SQL based core banking enhancements from requirement analysis through implementation, testing, debugging, and client demonstrations for enterprise banking workflows."
     ],
-    tech: ["GenAI", "LangGraph", "NLP", "Explainable AI (XAI)", "SQL", "Statistics", "Java", "TCS BaNCS"]
+    tech: ["Generative AI", "NLP Agents", "LangGraph", "Credit Underwriting", "Java", "SQL", "BFSI", "Banque Saudi Fransi", "TCS BaNCS"]
   }
 ];
 
@@ -44,7 +44,8 @@ export default function Experience() {
                 <div className={`glass-card p-8 rounded-3xl w-full hover:border-accent/30 transition-all ${idx % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
                   <span className="text-accent font-mono text-sm font-bold mb-2 block">{exp.period}</span>
                   <h3 className="text-2xl font-bold text-white mb-1">{exp.role}</h3>
-                  <div className="text-secondary-accent font-medium mb-4">{exp.company}</div>
+                  <div className="text-secondary-accent font-medium mb-1">{exp.company}</div>
+                  <div className="text-xs text-text-body font-mono mb-4">{exp.client}</div>
                   
                   <ul className={`list-disc pl-5 space-y-2 text-text-body text-xs md:text-sm leading-relaxed mb-6 text-left`}>
                     {exp.bullets.map((bullet, i) => (

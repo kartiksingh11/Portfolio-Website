@@ -4,22 +4,19 @@ import { Github, Terminal } from 'lucide-react';
 const projects = [
   {
     title: "Enterprise Multi-Agent GenAI Platform",
-    description: "Designed a multi-agent orchestration system (RAG, SQL, and Web agents) using LangGraph, with intelligent query routing across heterogeneous enterprise knowledge sources. Built an end-to-end RAG pipeline processing 1,000+ document chunks through embedding generation and ChromaDB-based semantic retrieval, reducing manual repository search time. Instrumented agent tracing and observability dashboards to support explainable, debuggable decision-making across the agent pipeline.",
-    image: "https://picsum.photos/seed/platform/800/500",
-    tags: ["LangGraph", "OpenAI", "ChromaDB", "SQLite", "FastAPI"],
+    description: "Architected a 3-agent LangGraph system routing RAG, SQL, and web requests through conditional workflows, tool execution, and session memory, reducing decision latency by approximately 35% in benchmarks. Built hybrid retrieval over 500+ document chunks using ChromaDB, BM25, and cross-encoder reranking (92% precision). Exposed workflows via FastAPI with SQLite-based tracing, and evaluated 4 RAG dimensions using RAGAS: faithfulness, answer relevancy, context precision, and context recall.",
+    tags: ["Python", "LangGraph", "FastAPI", "ChromaDB", "BM25", "RAGAS"],
     github: "https://github.com/kartiksingh11"
   },
   {
     title: "Multi-Agent RAG Compliance Auditor",
-    description: "Built an autonomous compliance auditor mapping banking policy documents against GDPR requirements using retrieval-augmented generation. Designed a multi-agent Critic workflow for cross-verification of retrieved evidence to reduce hallucinations, cutting manual compliance review effort by 70% through automated source attribution.",
-    image: "https://picsum.photos/seed/compliance/800/500",
-    tags: ["LangChain", "LlamaIndex", "ChromaDB", "GDPR"],
+    description: "Built a local multi-agent RAG auditor mapping internal banking policies against a structured GDPR corpus covering 500+ policy clauses. Designed a Researcher–Generator–Critic verification workflow that reduced hallucinated findings by approximately 30% in project evaluations. Implemented separate ChromaDB collections and citation-level provenance, providing 100% source traceability for generated compliance findings to matched policy clauses and GDPR articles.",
+    tags: ["Python", "LangChain", "LlamaIndex", "ChromaDB", "LLMs", "GDPR"],
     github: "https://github.com/kartiksingh11/Multi-Agent-Compliance-Auditor"
   },
   {
     title: "Predictive Maintenance for Industry 4.0",
-    description: "Dual-task ML system to predict machine failures and classify modes. Mitigated 97% class imbalance using SMOTE-NC and integrated transparency tools using Permutation Feature Importance.",
-    image: "https://picsum.photos/seed/maintenance/800/500",
+    description: "Dual-task ML system to predict machine failures and classify failure modes across IoT industrial sensor data. Mitigated 97% class imbalance using SMOTE-NC and integrated model transparency tools using Permutation Feature Importance.",
     tags: ["Python", "Scikit-learn", "XGBoost", "SMOTE-NC", "Graphviz"],
     github: "https://github.com/kartiksingh11/Predictive-Maintenance-System-ML"
   }
@@ -40,7 +37,7 @@ export default function Projects() {
             </h2>
           </div>
           <p className="text-text-body max-w-md">
-            A selection of my recent work, ranging from AI-powered compliance auditors to complex predictive maintenance systems.
+            A selection of recent systems spanning multi-agent orchestration, hybrid RAG compliance pipelines, and production machine learning.
           </p>
         </div>
 

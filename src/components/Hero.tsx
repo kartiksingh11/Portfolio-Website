@@ -3,7 +3,7 @@ import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 
-const roles = ["AI Engineer", "GenAI Specialist", "RAG Systems Builder", "LLMOps Practitioner"];
+const roles = ["AI Engineer", "Generative AI", "Agentic AI", "RAG Systems", "LangGraph & LLMOps"];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -41,9 +41,15 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center"
         >
-          <span className="inline-block px-4 py-1 bg-accent/10 text-accent rounded-full text-sm font-mono font-medium mb-6 border border-accent/20">
-            AI Engineer @ TCS
-          </span>
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
+            <span className="inline-block px-4 py-1 bg-accent/10 text-accent rounded-full text-sm font-mono font-medium border border-accent/20">
+              AI Engineer @ TCS (BFSI)
+            </span>
+            <span className="inline-block px-3 py-1 bg-white/5 text-text-body rounded-full text-xs font-mono border border-white/10">
+              Noida, India
+            </span>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
             Hi, I'm <span className="text-white">Kartik Singh</span>
             <br />
@@ -52,8 +58,9 @@ export default function Hero() {
               <span className="animate-pulse border-r-4 border-accent ml-1"></span>
             </span>
           </h1>
+
           <p className="text-lg text-text-body mb-8 max-w-2xl leading-relaxed">
-            AI Engineer with 2 years of experience designing and shipping multi-agent GenAI systems and RAG pipelines for enterprise banking. Specialized in agent orchestration (LangGraph), retrieval architectures (RAG, vector search), and LLMOps.
+            AI Engineer with 2+ years of software and product engineering experience in BFSI, building Generative AI, Retrieval-Augmented Generation (RAG), and agentic applications for financial document processing, credit underwriting, and enterprise knowledge retrieval.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-10">
@@ -76,9 +83,9 @@ export default function Hero() {
           </div>
 
           <div className="flex items-center gap-6">
-            <a href="https://github.com/kartiksingh11" target="_blank" rel="noopener noreferrer" className="text-text-body hover:text-white transition-colors"><Github className="w-6 h-6" /></a>
-            <a href="https://linkedin.com/in/kartik-singh11/" target="_blank" rel="noopener noreferrer" className="text-text-body hover:text-white transition-colors"><Linkedin className="w-6 h-6" /></a>
-            <a href="mailto:kartiksingh11a@gmail.com" className="text-text-body hover:text-white transition-colors"><Mail className="w-5 h-5" /></a>
+            <a href="https://github.com/kartiksingh11" target="_blank" rel="noopener noreferrer" className="text-text-body hover:text-white transition-colors" title="GitHub"><Github className="w-6 h-6" /></a>
+            <a href="https://linkedin.com/in/kartik-singh11/" target="_blank" rel="noopener noreferrer" className="text-text-body hover:text-white transition-colors" title="LinkedIn"><Linkedin className="w-6 h-6" /></a>
+            <a href="mailto:kartiksingh11a@gmail.com" className="text-text-body hover:text-white transition-colors" title="Email"><Mail className="w-5 h-5" /></a>
           </div>
         </motion.div>
       </div>

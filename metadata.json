@@ -1,5 +1,8 @@
 {
-  "name": "Kartik Singh | AI Product Engineer Portfolio",
-  "description": "Portfolio of Kartik Singh, an AI Product Engineer specializing in GenAI, Agentic AI, and RAG systems.",
-  "requestFramePermissions": []
+  "name": "Kartik Singh | AI Engineer Portfolio",
+  "description": "Portfolio of Kartik Singh, an AI Engineer specializing in Generative AI, Agentic Systems, LangGraph, and RAG architectures.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
