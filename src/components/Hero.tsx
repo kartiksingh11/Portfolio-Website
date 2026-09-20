@@ -3,7 +3,7 @@ import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 
-const roles = ["AI Engineer", "Generative AI", "Agentic AI", "RAG Systems", "LangGraph & LLMOps"];
+const roles = ["AI Engineer", "Generative AI", "Agentic AI", "RAG Systems"];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
